@@ -1,0 +1,209 @@
+/* style.css Trabalho de Química - Escala pH */
+
+:root {
+    --bg: #24292F;
+    --bglight: #DDF4FF;
+    --font: 'PT Sans', sans-serif;
+    --navhover: #FFFFFFB3;
+    --snd: #FFFFFF;
+    --trd: #F6F8FA;
+    --blue: #0969DA;
+}
+
+body {
+    font-family: var(--font);
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.2;
+    z-index: 90000;
+    margin-bottom: 0;
+    padding: 16px 24px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--snd);
+    transition: 0.23s all;
+    margin-left: 2rem;
+}
+
+.navbar a::selection,
+.navbar p::selection,
+.navbar q::selection,
+.navbar img::selection {
+    background-color: var(--snd);
+    color: var(--bg);
+}
+
+.navbar a:hover {
+    color: var(--navhover);
+}
+
+.icone-quimica {
+    border-radius: 50%;
+    width: 32px;
+    background-color: var(--snd);
+    transition: .23s all;
+    margin-left: 8px;
+}
+
+.icone-quimica:hover {
+    background-color: var(--navhover);
+    cursor: pointer;
+}
+
+.nav__title {
+    color: #cccccc;
+    border: 1px solid #cccccc65;
+    border-radius: 5px;
+    padding: 6px 1em;
+    margin-left: 0.4cm;
+}
+
+.pd {
+    margin-left: 5.4em;
+}
+
+.nav__title,
+.icone-quimica {
+    display: inline;
+    vertical-align: middle;
+    font-weight: 300;
+}
+
+.txt__header {
+    background-color: var(--trd);
+    padding-top: 0.17cm !important;
+}
+
+.fst__title {
+    margin-left: 1.6em;
+    margin-bottom: 2em;
+    font-size: 20px;
+    color: var(--blue);
+}
+
+.fst__p {
+    margin-left: 1.6em;
+    font-size: 20px;
+    color: var(--bg);
+    margin-bottom: 0.4cm;
+}
+
+hr {
+    border-color: #cccccc18;
+}
+
+.quotate {
+    font-size: 12px;
+    color: #576064;
+    padding: 4px 7px;
+    margin-left: 10px;
+    border: 1px solid #ccccccb0;
+    border-radius: 20px;
+}
+
+.quotate,
+.fst__title {
+    display: inline-block;
+}
+
+.snd__title {
+    font-size: 20px;
+    color: var(--blue);
+    margin-left: 1.6em;
+    margin-bottom: 1.3em;
+    margin-top: 2em;
+}
+
+.p {
+    margin-left: 1.6em;
+    font-size: 20px;
+    color: var(--bg);
+    margin-bottom: 0.4cm;
+}
+
+.p li {
+    line-height: 1.4;
+}
+
+main {
+    margin-left: 1.5in;
+    margin-right: 1.5in;
+}
+
+.video__experimento {
+    margin-left: 0.7cm;
+    margin-top: 2cm;
+}
+
+.trd__title {
+    font-size: 20px;
+    color: var(--bg);
+    margin-left: 1.6em;
+    margin-bottom: 2em;
+}
+
+.wasd {
+    padding: 24px;
+    border: 1px solid#CCCCCC;
+    border-radius: 6px 6px 0 0;
+    width: 103%;
+    margin-top: 3cm;
+}
+
+.dsaw {
+    padding: 24px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    border-radius: 0 0 6px 6px;
+    width: 103%;
+}
+
+.bg-light {
+    background-color: #F6F8FA;
+    padding: 15px 55px 15px 10px;
+}
+
+.escalapH {
+    width: 80%;
+}
+
+.escala {
+    display: flex;
+    justify-content: center;
+    margin-top: 1in;
+}
+
+#query {
+    margin-top: 1in;
+}
+
+.rodape {
+    background-color: #24292F;
+    color: var(--bglight);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 2.4rem 0;
+    margin-top: 1in;
+}
+
+.rodape div {
+    line-height: 2.0;
+    transition: 0.2s all;
+}
+
+.rodape div ul li:hover {
+    color: #CCCCCC;
+    cursor: pointer;
+}
